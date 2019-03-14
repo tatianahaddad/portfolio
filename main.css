@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-@media screen and (min-width: 375px) {
+@media screen and (min-width: 320px) {
   /*.click-links {
     display: none;
   }*/
@@ -70,7 +70,6 @@
   ul.submenu li a:hover{
     background: white;
   }
-  
 
   .name {
     float: left;
@@ -82,24 +81,30 @@
     float: right;
     margin: 5px 10px 5px 10px;
   }
-  
-  .click-links {
-    display: none;
-  }  
+
+  .main {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    background-color:  #EBEBEB;
+    padding: 3.24em;
+
+  }
 
   h1 {
-    margin-top: 250px;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
-    color: black;
+    color: #FF7979;
+    font-weight: bold;
   }
 
   .web-dev {
-    margin-top: 60px;
+    /*margin-top: 60px;*/
     font-family: 'Oswald', sans-serif;
     margin-bottom: 125px;
-    color: black;
+    color: #FF7979;
+    font-weight: bold;
   }
 
   a {
@@ -108,6 +113,7 @@
     color: black;
     margin-top: 10px;
     font-size: 18px;
+    color: #FF7979;
   }
 
   .block-anchor {
@@ -152,9 +158,6 @@
     margin-bottom: 50px;
   }
 
-  .clickable-links {
-    color: #FF7979;
-  }
 
   footer {
     font-family: 'Quattrocento', serif;
@@ -240,7 +243,6 @@
       color: #FF7979;
       font-weight: bold;
       padding: 5%;
-      margin-top: 410px;
   }
 
   .about-me-image-and-header {
