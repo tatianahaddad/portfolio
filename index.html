@@ -7,61 +7,70 @@
   <link rel="stylesheet" type="text/css" href="main.css">
   <link href="https://fonts.googleapis.com/css?family=Oswald|Quattrocento" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
+  <div class="main">
   <nav role="navigation" class="nav-bar">
     <div class="name">Tatiana Haddad</div>
-    <div class="hamburger">&#9776;</div>
-    <ul class="click-links">
-      <li class="icon"><img src="images/github.png" alt="Github icon"></li>
-      <li class="icon"><img src="images/LinkedIn.png" alt="Linkedin icon"></li>
-      <li class="icon"><img src="images/mail.png" alt="Mail icon"></li>
+    <ul id="menu">
+      <li>
+        <input id="check01" type="checkbox" name="menu"/>
+          <label for="check01">&#9776;</label>
+          <ul class="submenu">
+            <li><a href="https://github.com/tatianahaddad?tab=repositories" target="_blank"><img src="images/GitHub-Mark.png" alt="Github icon" class="icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/tatiana-haddad-014383b0/" target="_blank"><img src="images/LinkedIn.png" alt="Linkedin icon" class="icon"></a></li>
+            <li><a href="mailto:tatianadhaddad@gmail.com" target="_blank"><img src="images/mail2.png" alt="Mail icon" class="icon"></a></li>
+          </ul>
+      </li>
     </ul>
   </nav>
+  </div> 
   <main role="main">
+    <div class="main">
+    <!--<section class="main"><img src="images/stars.png"></section>-->
     <header role="banner">
-      <h1>Hi, I'm Tatiana.</h1> 
+      <h1>Hi, I'm Tatiana.</h1><a class="block-anchor" name="tatiana"></a>
       <h2 class="web-dev">I am a Full Stack Web developer with a passion for web design.</h2>
-      <img src="images/Linkedin-profile.png" alt="Tatiana Haddad image"></img>
+      <div class="click-to-other">
+        <a href="#about-me">Learn more about me</a>
+        <a href="#portfolio">Check out my portfolio</a>
+      </div>
     </header>
-
-    <section class="about-me">
-      <h2 class="about-me-header">About Me</h2>
+    </div>
+    <a class="block-anchor" name="about-me"></a>
+    <section class="about-me-section">
+      <div class="about-me-image-and-header">
+        <h2 class="about-me-header">About Me</h2>
+        <a href="https://www.linkedin.com/in/tatiana-haddad-014383b0/" target="_blank"><img src="images/Linkedin-profile.png" alt="Tatiana Haddad image" class="linkedin-profile"></a>
+      </div>
       <p>
-        I am a current student in Thinkful's Full Stack Flexible bootcamp program where I have learned how to implement HTML, CSS, 
-        JavaScript and jQuery to create beautifully simplistic and user-friendly websites. To be able to bring my creations to life
-        has given me a constructive outlet for my creative energy. More challengingly— and more excitingly— I am now able
-        to visually create and execute what my clients have envisioned for their sites and for their users to interact with.
+        I am a current student in Thinkful's Full Stack Flexible bootcamp program where I have learned how to implement HTML, CSS, JavaScript and jQuery to create beautifully simplistic and user-friendly websites. To be able to bring my creations to life has given me a constructive outlet for my creative energy. More challengingly— and more excitingly— I am now able to visually create and execute what my clients have envisioned for their sites and for their users to interact with.
       </p>
       <p>
-        In my (sparingly) free time, I can be found on the slopes of Big Bear Mountain skiing down black diamond runs, 
-        snuggled up with my cat Oscar whose resemblance to Garfield is scarily uncanny, or attempting to re-live my youth by playing
-        Super Mario 64 and Donkey Kong 64.
+        In my (sparingly) free time, I can be found on the slopes of Big Bear Mountain skiing down black diamond runs, snuggled up with my cat Oscar whose resemblance to Garfield is scarily uncanny, or attempting to re-live my youth by playing Super Mario 64 and Donkey Kong 64.
       </p>
     </section>
 
-    <section>
-      <h2 class="portfoio">Portfolio</h2>
-        <h3>Pride and Prejudice Quiz App</h3>
-          <!--<div class="screenshot">-->
-          <img src="images/quizcorrect.png" class="pride" alt="Pride and Prejudice Quiz App correct screen">
-          <!--</div>-->
-          <div class="info">
-          <p>Find out if you truly know your Pride and Prejudice trivia by submitting your answer when presented with 10 multiple choice questions one at a time, receiving feedback if the answer was correct or not, and receiving your final score results with 
-              the option to play again.
+    <a class="block-anchor" name="portfolio"></a>
+    <section class="info">
+        <h2 class="portfolio-header">Portfolio</h2>
+          <h3>Pride and Prejudice Quiz App</h3>
+          <a href="https://tatianahaddad.github.io/quiz-app/" target="_blank"><img src="images/quizcorrect.png" class="pride" alt="Pride and Prejudice Quiz App correct screen"></a>
+          <div class="float-paragraphs">
+          <p class="left-paragraph">
+            Find out if you truly know your Pride and Prejudice trivia by submitting your answer when presented with 10 multiple choice questions one at a time, receiving feedback if the answer was correct or not, and receiving your final score results with the option to play again.
           </p>
-          <p>
-            HTML was used to load the start page, JavaScript functions were used alongside jQuery libraries to provide interactive 
-            material for the user to click and submit answers. In addition, inserting content material such as the questions and multiple
-            choice answers into to the HTML page was accomplished through JavaScript functions and jQuery libraries.  
-            CSS was used throughout to create visually striking content and to allow for a seamless UX.    
+          <p class="right-paragraph">
+            HTML was used to load the start page, JavaScript functions were used alongside jQuery libraries to provide interactive material for the user to click and submit answers. In addition, inserting content material such as the questions and multiple choice answers into to the HTML page was accomplished through JavaScript functions and jQuery libraries. CSS was used throughout to create visually striking content and to allow for a seamless UX.    
           </p>
           </div>
           <section class="links">
-            <div><a href="https://github.com/tatianahaddad/quiz-app">Github</a></div>
-            <div><a href="https://tatianahaddad.github.io/quiz-app/">Live App</a></div>
+            <div><a href="https://github.com/tatianahaddad/quiz-app" target="_blank" class="clickable-links">Github</a></div>
+            <div><a href="https://tatianahaddad.github.io/quiz-app/" target="_blank" class="clickable-links">Live App</a></div>
           </section>
     </section>
+    <script type="text/javascript" src = "index.js"></script>
   </main>
     <footer role="contentinfo">&copy; Tatiana Haddad 2019</footer>
 </body>
