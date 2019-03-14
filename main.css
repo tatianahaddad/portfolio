@@ -92,7 +92,7 @@
   }
 
   h1 {
-    /*margin-bottom: 100px;*/
+    margin-bottom: 100px;
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
     color: #FF7979;
@@ -100,7 +100,7 @@
   }
 
   .web-dev {
-    /*margin-top: 60px;*/
+    margin-top: 40px;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 125px;
     color: #FF7979;
@@ -209,25 +209,25 @@
 }
 
 @media screen and (min-width: 800px) {
+  .web-dev {
+    margin-top: 20px;
+  }
+
   .linkedin-profile {
     display: inline-block;
     margin: 5px 20px;
   }
 
   h1 {
-    margin-top: 400px;
+    margin-top: 100px;
     margin-bottom: 100px;
-  }
-
-  .web-dev {
-    margin-bottom: 300px
   }
 
   #about-me {
     margin-top: 100px;
   }
   .click-to-other {
-    margin-top: 400px;
+    margin-top: 10px;
   }
 
   .about-me > p {
