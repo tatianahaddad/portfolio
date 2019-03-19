@@ -3,9 +3,6 @@
 }
 
 @media screen and (min-width: 320px) {
-  /*.click-links {
-    display: none;
-  }*/
 
   body {
     text-align: center;
@@ -16,7 +13,7 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 50px;
+    height: 55px;
     width: auto;
     font-family: 'Quattrocento', serif;
     font-size: 18px;
@@ -37,6 +34,8 @@
     position: relative;
     display: block;
     padding: 0 35px;
+    margin-bottom: 5px;
+    margin-top: -7px;
     line-height: 30px;
     cursor: pointer;
     background-color: white;
@@ -73,47 +72,59 @@
 
   .name {
     float: left;
-    padding: 0 18px 0 12px;
-    margin: 30px 20px;
-  }
-  
-  .hamburger {
-    float: right;
-    margin: 5px 10px 5px 10px;
+    margin: 15px 0px 5px 10px;
+    padding: 2px;
   }
 
-  .main {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: column;
-    background-color:  #EBEBEB;
+  .pattern { 
+    background: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)), url(images/pattern.jpg) center center;
+  }
+  header {
     padding: 3.24em;
+  }
 
+  .banner {
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url(images/flowers.png) no-repeat;
+    background-size: contain;
   }
 
   h1 {
     margin-bottom: 100px;
+    margin-top: 100px;
     font-family: 'Oswald', sans-serif;
     font-size: 48px;
-    color: #FF7979;
-    font-weight: bold;
+    text-rendering: optimizeLegibility;
+    mix-blend-mode: multiply;
+    color: #434425;
+    margin: 0;
+    font: bolder;
   }
 
   .web-dev {
     margin-top: 40px;
     font-family: 'Oswald', sans-serif;
     margin-bottom: 125px;
-    color: #FF7979;
+    color: #434425;
     font-weight: bold;
+  }
+
+  button {
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    height: 75px;
+    width: 200px;
+    border: 2px #DADCE0 solid;
+    border-radius: 16px;
+    margin-bottom: 20px;
   }
 
   a {
     display: block;
     font-family: 'Quattrocento', serif;
-    color: black;
+    color: #434425;
     margin-top: 10px;
     font-size: 18px;
-    color: #FF7979;
+    text-decoration: none;
   }
 
   .block-anchor {
@@ -124,6 +135,13 @@
     font-family: 'Oswald', sans-serif;
     margin-bottom: 20px;
     font-size: 30px;
+  }
+
+  .content {
+    background-color: white;
+    color: black;
+    margin: 5px;
+    padding: 2px;
   }
 
   .linkedin-profile {
@@ -174,7 +192,7 @@
   .about-me-section {
     display:inline-block;
     background-color:  #EBEBEB;
-    color: #FF7979;
+    color: #434425;
     font-weight: bold;
     padding: 2%;
     margin: 135px 5px 50px 5px;
@@ -185,7 +203,7 @@
   .info {
     display:inline-block;
     background-color:  #EBEBEB;
-    color: #FF7979;
+    color: #434425;
     font-weight: bold;
     padding: 2%;
     margin: 10px 5px 50px 5px;
@@ -223,6 +241,15 @@
     margin-bottom: 100px;
   }
 
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  button {
+    margin-right: 10px;
+  }
+
   #about-me {
     margin-top: 100px;
   }
@@ -234,20 +261,15 @@
     display: inline-block;
   }
 
-  .about-me-section {
+  .about-me-image-and-content {
       display: flex;
       width: auto;
       margin-left: auto;
       margin-right: auto;
-      background-color: #EBEBEB;
-      color: #FF7979;
+      background-color: white;
+      color: #434425;
       font-weight: bold;
-      padding: 5%;
-  }
-
-  .about-me-image-and-header {
-    display: flex;
-    flex-direction: column;
+      margin: 20px;
   }
 
   .portfolio-header {
@@ -261,7 +283,7 @@
     justify-content: space-evenly;
     width: auto;
     background-color: #EBEBEB;
-    color: #FF7979;
+    color: #434425;
     font-weight: bold;
     padding: 2%;
     margin: 100px 5px 10px 5px;
@@ -272,12 +294,13 @@
     padding: 5%
   }
 
-  .click-links > .icon {
-    display: flex;
+  .contact-me {
+    display: inline-block;
+    margin: 2em 2em 2em;
+    
   }
 
   li {
     list-style: none;
   }
-
 }
